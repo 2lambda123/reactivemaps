@@ -26,7 +26,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@appbaseio/reactivebase": "1.4.2",
-    "axios": "^0.15.2",
+    "axios": "^1.6.0",
     "classnames": "^2.2.5",
     "google-map-react": "^0.14.5",
     "google-maps": "^3.2.1",
