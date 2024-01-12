@@ -401,13 +401,19 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
 
+argparse@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
+  dependencies:
+    sprintf-js "~1.0.2"
+
 argparse@^1.0.7:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.9.tgz#73d83bc263f86e97f8cc4f6bae1b0e90a7d22c86"
   dependencies:
     sprintf-js "~1.0.2"
 
-"argparse@~ 0.1.11", argparse@~0.1.15:
+"argparse@~ 0.1.11":
   version "0.1.16"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-0.1.16.tgz#cfd01e0fbba3d6caed049fbd758d40f65196f57c"
   dependencies:
@@ -562,9 +568,11 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-autolinker@~0.15.0:
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/autolinker/-/autolinker-0.15.3.tgz#342417d8f2f3461b14cf09088d5edf8791dc9832"
+autolinker@~0.28.0:
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/autolinker/-/autolinker-0.28.1.tgz#0652b491881879f0775dace0cdca3233942a4e47"
+  dependencies:
+    gulp-header "^1.7.1"
 
 autoprefixer@^6.3.1:
   version "6.7.7"
@@ -2466,6 +2474,12 @@ concat-stream@^1.5.2, concat-stream@^1.6.0:
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
 
+concat-with-sourcemaps@*:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/concat-with-sourcemaps/-/concat-with-sourcemaps-1.1.0.tgz#d4ea93f05ae25790951b99e7b3b09e3908a4082e"
+  dependencies:
+    source-map "^0.6.1"
+
 concat-with-sourcemaps@^1.0.0:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/concat-with-sourcemaps/-/concat-with-sourcemaps-1.0.4.tgz#f55b3be2aeb47601b10a2d5259ccfb70fd2f1dd6"
@@ -4216,6 +4230,14 @@ gulp-file-include@^1.0.0:
     gulp-util "^3.0.8"
     through2 "^2.0.3"
 
+gulp-header@^1.7.1:
+  version "1.8.12"
+  resolved "https://registry.yarnpkg.com/gulp-header/-/gulp-header-1.8.12.tgz#ad306be0066599127281c4f8786660e705080a84"
+  dependencies:
+    concat-with-sourcemaps "*"
+    lodash.template "^4.4.0"
+    through2 "^2.0.0"
+
 gulp-jshint@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/gulp-jshint/-/gulp-jshint-2.0.4.tgz#f382b18564b1072def0c9aaf753c146dadb4f0e8"
@@ -5675,12 +5697,25 @@ lodash.template@^3.0.0:
     lodash.restparam "^3.0.0"
     lodash.templatesettings "^3.0.0"
 
+lodash.template@^4.4.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.template/-/lodash.template-4.5.0.tgz#f976195cf3f347d0d5f52483569fe8031ccce8ab"
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
+    lodash.templatesettings "^4.0.0"
+
 lodash.templatesettings@^3.0.0:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-3.1.1.tgz#fb307844753b66b9f1afa54e262c745307dba8e5"
   dependencies:
     lodash._reinterpolate "^3.0.0"
     lodash.escape "^3.0.0"
+
+lodash.templatesettings@^4.0.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.templatesettings/-/lodash.templatesettings-4.2.0.tgz#e481310f049d3cf6d47e912ad09313b154f0fb33"
+  dependencies:
+    lodash._reinterpolate "^3.0.0"
 
 lodash.toarray@^4.4.0:
   version "4.4.0"
@@ -7683,11 +7718,11 @@ regjsparser@^0.1.4:
     jsesc "~0.5.0"
 
 remarkable@^1.4.1:
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/remarkable/-/remarkable-1.7.1.tgz#aaca4972100b66a642a63a1021ca4bac1be3bff6"
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/remarkable/-/remarkable-1.7.4.tgz#19073cb960398c87a7d6546eaa5e50d2022fcd00"
   dependencies:
-    argparse "~0.1.15"
-    autolinker "~0.15.0"
+    argparse "^1.0.10"
+    autolinker "~0.28.0"
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
